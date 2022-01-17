@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".Activity.OTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtRealName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edtRealName"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtTenTK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tài Khoản"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mật Khẩu"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtNhapLaiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edtNhapLaiMatKhau"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edtDiaChi"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtGmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edtGmail"
+            />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtOTPOTP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="OTP"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOTPOTP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập OTP"/>
+
+    <TextView
+        android:id="@+id/otp_form_feedback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Working . . ."
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify_btn" />
+    <ProgressBar
+        android:id="@+id/otp_progress_bar1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/verify_btn"
+        app:layout_constraintEnd_toEndOf="@+id/verify_btn"
+        app:layout_constraintTop_toTopOf="@+id/verify_btn" />
+</LinearLayout>

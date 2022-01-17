@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trangChuSanPham_drawerllout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.trangChu_SanPham_Activity"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/trangChuSanPham_nav_drawer"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/lf_orange_3"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/drawer_nav_menu"
+        app:itemIconPadding="10dp"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/drawer_nav_menu" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/trangChuSanPham_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:collapseIcon="@drawable/ic_menu_bar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/trangChuSanPham_img_showMenu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_menu_bar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout11"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+                    app:layout_constraintStart_toEndOf="@+id/trangChuSanPham_img_showMenu"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <FrameLayout
+                        android:id="@+id/sanPham_f_search"
+                        android:layout_width="0dp"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/broder_stroke_cam"
+                        android:hint="Search"
+                        android:orientation="horizontal"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/trangChuSanPham_frm_loai"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="40dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|start"
+                                android:padding="8dp"
+
+                                android:src="@drawable/ic_timkiem" />
+
+                            <EditText
+                                android:id="@+id/trangChuSanPham_edt_timKiemSanPham"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:paddingRight="10dp"
+                                android:textSize="10dp"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+
+                        <TextView
+
+                            android:id="@+id/trangChuSanPham_tv_loai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|end"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:text="/TÊN"
+                            android:textColor="@color/lf_orange_3"
+
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/trangChuSanPham_llout_formChonLoai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center|end"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/trangChuSanPham_tv_btn_timTen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="T"
+                                android:textColor="@color/lf_orange"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/trangChuSanPham_tv_btn_timGia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="G"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/trangChuSanPham_tv_btn_timLoai"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="4dp"
+                                android:text="L"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/trangChuSanPham_frm_loai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <ImageView
+                            android:id="@+id/trangChuSanPham_img_btn_kieuLoaiSanPham"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center|end"
+                            android:background="@drawable/broder_radius_xanhduong_nhe"
+                            android:padding="7dp"
+                            android:src="@drawable/ic_tuychinh" />
+                    </FrameLayout>
+
+                    />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:id="@+id/trangChuSanPham_img_btnGioHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/ic_giohang2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@color/lf_red" />
+
+                    <TextView
+                        android:id="@+id/trangChuSanPham_tv_soLuongThongBao"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="4dp"
+                        android:gravity="center"
+                        android:src="@color/lf_red"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:alpha="0.5"
+            android:background="@color/lf_orange" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.smarteist.autoimageslider.SliderView
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="215dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:sliderAnimationDuration="600"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorAnimationDuration="600"
+                            app:sliderIndicatorGravity="center_horizontal|bottom"
+                            app:sliderIndicatorMargin="15dp"
+                            app:sliderIndicatorOrientation="horizontal"
+                            app:sliderIndicatorPadding="3dp"
+                            app:sliderIndicatorRadius="2dp"
+                            app:sliderIndicatorSelectedColor="#5A5A5A"
+                            app:sliderIndicatorUnselectedColor="#fff"
+                            app:sliderScrollTimeInSec="2"
+                            app:sliderStartAutoCycle="true">
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:scaleType="fitXY"-->
+                            <!--                                android:src="@drawable/img_panner" />-->
+                        </com.smarteist.autoimageslider.SliderView>
+
+                        <HorizontalScrollView
+                            android:id="@+id/horizontalScrollView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:scrollbars="none"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/trangChuSanPham_tv_btn_showTatCaLoaiSanpham"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:background="@drawable/broder_radius_cam2_thuonghieu"
+                                    android:gravity="center"
+                                    android:text="All"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/trangChuSanPham_img_showLoaiCoffee"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/broder_radius_xanhduong_nhe"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+
+                                    android:src="@drawable/ic_coffee" />
+
+                                <ImageView
+                                    android:id="@+id/trangChuSanPham_img_showLoaiThaoDuoc"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/broder_radius_xanhduong_nhe"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:src="@drawable/ic_herb" />
+
+                                <ImageView
+                                    android:id="@+id/trangChuSanPham_img_showLoaiHat"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/broder_radius_xanhduong_nhe"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:src="@drawable/ic_seed" />
+
+                                <ImageView
+                                    android:id="@+id/trangChuSanPham_img_showLoaiMuc"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/broder_radius_xanhduong_nhe"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:src="@drawable/ic_jam" />
+
+                                <ImageView
+                                    android:id="@+id/trangChuSanPham_img_showLoaiTra"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/broder_radius_xanhduong_nhe"
+                                    android:paddingLeft="12dp"
+                                    android:paddingRight="12dp"
+                                    android:src="@drawable/ic_tea" />
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                        <FrameLayout
+                            android:id="@+id/textView2"
+                            android:layout_width="148dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/img_showitem" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|start"
+                                android:paddingLeft="10dp"
+                                android:text="Top sản phẩm"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+
+                            android:id="@+id/trangChuSanPham_rscV_showSanPhamNgang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                        <FrameLayout
+                            android:id="@+id/textView4"
+                            android:layout_width="148dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="15sp"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/trangChuSanPham_rscV_showSanPhamNgang">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/img_showitem" />
+
+                            <TextView
+                                android:id="@+id/trangChuSanPham_tv_showLoai"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|start"
+                                android:paddingLeft="10dp"
+                                android:text="Sản phẩm: All"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+                        </FrameLayout>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/trangChuSanPham_rscV_showSanPhamDoc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="5dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.473"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/trangChuSanPham_FloatBtn_nemu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/ic_menu"
+                    app:backgroundTint="@color/lf_orange_3"
+                    app:borderWidth="0dp"
+                    app:elevation="6dp"
+                    app:fabSize="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/trangChuSanPham_Flout_btn_user"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/trangChuSanPham_FloatBtn_nemu"
+                    app:layout_constraintEnd_toEndOf="@+id/trangChuSanPham_FloatBtn_nemu"
+                    app:layout_constraintStart_toStartOf="@+id/trangChuSanPham_FloatBtn_nemu">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@color/lf_orange"
+                        app:borderWidth="0dp"
+                        app:circularflow_radiusInDP="10"
+                        app:elevation="19dp"
+                        app:fabSize="normal"
+                        app:fab_size="mini" />
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_user_white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/trangChuSanPham_Flout_btn_donHang"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@+id/trangChuSanPham_Flout_btn_user"
+                    app:layout_constraintEnd_toEndOf="@+id/trangChuSanPham_FloatBtn_nemu"
+                    app:layout_constraintStart_toStartOf="@+id/trangChuSanPham_FloatBtn_nemu">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@color/lf_orange_3"
+                        app:borderWidth="0dp"
+                        app:circularflow_radiusInDP="10"
+                        app:elevation="19dp"
+                        app:fabSize="normal"
+                        app:fab_size="mini" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_giohang" />
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

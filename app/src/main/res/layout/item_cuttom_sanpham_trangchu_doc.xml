@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="220dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/itemCuttomTrangChu_doc_llout_btn_showChiTietSanPham"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/itemCuttomTrangChu_doc_imgShowAnhSanPham"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_anhmau1" />
+
+                <ImageView
+                    android:id="@+id/itemCuttomTrangChu_doc_img_btn_chonYeuThich"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_btn_love_white" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:alpha="0.7"
+                        android:background="@drawable/broder_radius_white" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ic_giohang_tim" />
+
+                        <TextView
+                            android:id="@+id/itemCuttomTrangChu_doc_tv_soLuongSanPhamMuaYeuThich"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12"
+                            android:textColor="@color/lf_brown"
+                            android:textSize="7sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/itemCuttomTrangChu_doc_tv_xuatXu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Xuất xứ: Đà lạt"
+                android:textSize="7sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/itemCuttomTrangChu_doc_tv_tenSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:paddingRight="10dp"
+                android:text="Hồng đào khô"
+                android:textColor="@color/lf_orange"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemCuttomTrangChu_doc_tv_xuatXu" />
+
+            <TextView
+                android:id="@+id/itemCuttomTrangChu_doc_tv_giaSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+
+                android:text="100,000VNĐ"
+                android:textColor="@color/lf_brown"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemCuttomTrangChu_doc_tv_tenSanPham" />
+
+            <LinearLayout
+
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="14dp"
+
+                    android:layout_height="3dp"
+                    android:src="@drawable/ic_show_chitietsanpham" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

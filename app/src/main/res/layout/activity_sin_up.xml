@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/signUp_lv_btn_submid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/thongTinTaiKhoan_img_btn_thoat"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/broder_radius_xanhduong_nhe"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_back_orage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/broder_radius_cam_thuonghieu"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Sign up"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/signUp_tv_btn_Login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:text="Login"
+                        android:textColor="@color/lf_orange"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lf_orange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView3"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Đăng Kí"
+                            android:textColor="#000000"
+                            android:textSize="38sp"
+                            tools:layout_editor_absoluteX="473dp"
+                            tools:layout_editor_absoluteY="15dp" />
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_ten"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_TenKH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Tên khách hàng"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+
+                            android:padding="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_tenDangNhap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_ten"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_teDangNhapKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Tên đăng nhập"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+
+                />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_gmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_tenDangNhap">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_gmailKH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Nhập gmail"
+                            android:textSize="12sp"
+
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            app:layout_constraintTop_toBottomOf="@+id/signUp_edt_tenDangNhap"
+                            tools:layout_editor_absoluteX="2dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_matKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_gmail">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_matKhauKH"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:gravity="center_vertical"
+                            android:hint="Mật khẩu"
+                            android:textSize="12sp"
+
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:padding="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_NhapLaiMatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_matKhau">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_repeatMatKhau"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Mật khẩu"
+                            android:inputType="textPassword"
+                            android:textSize="12sp"
+
+                            android:maxLines="1"
+                            android:padding="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_DiaChi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_NhapLaiMatKhau">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_DiaChiKhachHang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Địa chỉ"
+                            android:maxLines="1"
+                            android:textSize="12sp"
+                            android:padding="10dp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ImageView
+                        android:id="@+id/singUp_Im_ViTri"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@drawable/gps"
+                        app:layout_constraintBottom_toBottomOf="@+id/signUp_edt_DiaChi"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        app:layout_constraintStart_toEndOf="@+id/signUp_edt_DiaChi"
+                        app:layout_constraintTop_toTopOf="@+id/signUp_edt_DiaChi"
+                        app:layout_constraintVertical_bias="0.6" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/signUp_edt_SDT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_DiaChi">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signUp_edt_phoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/broder_stroke_cam"
+                            android:hint="Số điện thoại"
+                            android:textSize="12sp"
+                            android:maxLines="1"
+                            android:padding="10dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/signUp_edt_SDT">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/broder_radius_cam3_thuonghieu">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/broder_radius_xanhduong_nhe"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_gg" />
+
+                            <TextView
+                                android:id="@+id/login_tv_google"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Google"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/broder_radius_cam3_thuonghieu">
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/broder_radius_xanhduong_nhe"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_phone" />
+
+
+                            <TextView
+                                android:id="@+id/login_tv_Phone"
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="8dp"
+                                android:text="Phone"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/signUp_lv_btn_submid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/broder_radius_cam_thuonghieu"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="13sp"
+            android:text="Đăng Kí"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn Đã Có Tài Khoản Rồi"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/signUp_tv_btn_loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Đăng Nhập"
+            android:textColor="@color/lf_orange_2"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/xuLi_cardView_formItem2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+
+        app:cardCornerRadius="25dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/xuLi_relative_formItem2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/carview1"-->
+            <!--                android:layout_width="20dp"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_marginTop="11dp"-->
+            <!--                android:layout_marginEnd="10dp"-->
+            <!--                app:cardBackgroundColor="#DDDDDDDD"-->
+            <!--                app:cardCornerRadius="5dp"-->
+            <!--                app:cardElevation="0dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="10dp"-->
+            <!--                    android:layout_height="10dp"-->
+            <!--                    android:layout_gravity="center_horizontal|center_vertical"-->
+            <!--                    android:src="@drawable/icons8love96" />-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/xuLi_img_anhItem1"
+
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/xuLi_img_anhItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/cardview22"-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:layout_below="@+id/textView111"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginTop="33dp"-->
+            <!--                android:layout_toEndOf="@+id/textView144"-->
+            <!--                android:layout_toRightOf="@+id/textView144"-->
+            <!--                app:cardBackgroundColor="#DDDDDDDD"-->
+            <!--                app:cardCornerRadius="6dp"-->
+            <!--                app:cardElevation="0dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="16dp"-->
+            <!--                    android:layout_height="16dp"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal"-->
+            <!--                    android:src="@drawable/minussign" />-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <TextView
+                android:id="@+id/xuLi_txt_tenItem2"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+                android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+                android:text="Hồng đào khô"
+
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_xuatXu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xuLi_txt_tenItem2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+                android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+                android:text="Xuất xứ:"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+                app:layout_constraintTop_toBottomOf="@+id/xuLi_txt_tenItem2" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_xuatXuItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xuLi_txt_xuatXu2"
+                android:layout_alignBottom="@+id/xuLi_txt_xuatXu2"
+                android:layout_toEndOf="@+id/xuLi_txt_xuatXu2"
+                android:layout_toRightOf="@+id/xuLi_txt_xuatXu2"
+                android:text="Đà lạt"
+                android:textSize="11sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_xuatXu2"
+                app:layout_constraintStart_toEndOf="@+id/xuLi_txt_xuatXu2"
+                app:layout_constraintTop_toTopOf="@+id/xuLi_txt_xuatXu2" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_giaItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xuLi_txt_xuatXu2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+                android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+                android:text="đ100.000"
+                android:textColor="#F0A23C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+                app:layout_constraintTop_toBottomOf="@+id/xuLi_txt_xuatXu2" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_soLuong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xuLi_txt_giaItem2"
+                android:layout_alignBottom="@+id/xuLi_txt_giaItem2"
+                android:layout_toEndOf="@+id/xuLi_txt_giaItem2"
+                android:text="SL"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_soLuongItem2"
+                app:layout_constraintEnd_toStartOf="@+id/xuLi_txt_soLuongItem2"
+                app:layout_constraintTop_toTopOf="@+id/xuLi_txt_soLuongItem2" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_soLuongItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xuLi_txt_giaItem2"
+                android:layout_alignBottom="@+id/xuLi_txt_giaItem2"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@+id/xuLi_txt_soLuong2"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_giaItem2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/xuLi_txt_giaItem2" />
+
+            <ImageButton
+                android:id="@+id/itemkhoHang_imgBtn_xoaItem"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                android:layout_marginRight="15dp"
+
+                android:layout_gravity="center|end"
+                android:background="@drawable/btn_delete"
+                app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_tenItem2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/xuLi_txt_tenItem2"
+                tools:ignore="MissingConstraints" />
+
+
+            <!--            <Button-->
+            <!--                android:id="@+id/xuLi_txt_Button_xoa"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="80dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:layout_marginLeft="300dp">-->
+            <!--            </Button>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

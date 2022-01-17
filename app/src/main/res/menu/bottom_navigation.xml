@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item  android:id="@+id/cart"
+        android:title=""
+        android:icon="@drawable/ic_giohang_tim"
+        >
+    </item>
+    <item  android:id="@+id/Like"
+        android:title=""
+        android:icon="@drawable/ic_love">
+    </item>
+
+
+    <item  android:id="@+id/Home"
+        android:title=""
+        android:icon="@drawable/ic_home">
+    </item>
+
+    <item  android:id="@+id/Paid"
+        android:title=""
+        android:icon="@drawable/ic_giohang"
+      >
+    </item>
+    <item  android:id="@+id/Use"
+        android:title=""
+        android:icon="@drawable/ic_user"
+        >
+    </item>
+</menu>

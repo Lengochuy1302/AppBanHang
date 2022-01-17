@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="362dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:src="@color/lf_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Online"
+                android:textColor="@color/lf_green"
+                android:textSize="7sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemChiaSeGioHang_tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="key:#dbzd2g"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/man"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemChiaSeGioHang_crimg_avata"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/img_anhmau1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemChiaSeGioHang_tv_nameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hieu Trung"
+            android:textColor="@color/lf_orange"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/itemChiaSeGioHang_crimg_avata"
+            app:layout_constraintStart_toStartOf="@+id/itemChiaSeGioHang_crimg_avata"
+            app:layout_constraintTop_toBottomOf="@+id/itemChiaSeGioHang_crimg_avata" />
+
+        <TextView
+            android:id="@+id/itemChiaSeGioHang_tv_diaChi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:text="123 Nguyễn đình chiều TP.Buôn Mê Thuật"
+            android:textColor="@color/black"
+
+            android:textSize="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemChiaSeGioHang_tv_nameUser" />
+
+        <LinearLayout
+
+            android:id="@+id/itemChiaSeGioHang_llout_btn_chiaSeGioHang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/border_share_cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemChiaSeGioHang_tv_diaChi">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginBottom="2.5dp"
+                app:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:src="@drawable/icons8_share_90" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_share_cart"
+                android:gravity="center"
+                android:text="Share cart"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

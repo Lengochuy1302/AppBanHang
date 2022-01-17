@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:title=" ">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/drawer_nav_home"
+                        android:title="Home"
+                        android:icon="@drawable/ic_home"/>
+
+                    <item
+                        android:id="@+id/drawer_nav_like"
+                        android:title="Yêu thích"
+                        android:icon="@drawable/ic_love"/>
+
+                    <item
+                        android:id="@+id/drawer_nav_cart"
+                        android:title="Giỏ hàng"
+
+                        android:icon="@drawable/ic_giohang_tim"
+                        />
+                    <item  android:id="@+id/drawer_nav_gioHang"
+                        android:title="Đơn hàng"
+                        android:icon="@drawable/ic_giohang"
+                        />
+                </group>
+            </menu>
+        </item>
+
+    <item
+        android:title="Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_nav_login"
+                    android:title="Đăng nhập"/>
+
+                <item
+                    android:id="@+id/drawer_nav_profile"
+                    android:title="Thông tin cá nhân"/>
+
+                <item
+
+                    android:id="@+id/drawer_nav_logout"
+                    android:title="Đăng xuất"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <!--            cái này cũng như thế     -->
+
+            <item
+                android:id="@+id/drawer_nav_share"
+                android:title="Share"/>
+
+            <item
+                android:id="@+id/drawer_nav_rate"
+                android:title="Rate Us"/>
+
+        </menu>
+
+    </item>
+</menu>

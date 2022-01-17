@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.favorite_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/donHangChiTiet_img_btnThoat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/broder_radius_xanhduong_nhe"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_orage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11dp"
+            android:gravity="center"
+            android:textColor="#F0A23c"
+            android:text="Chi tiết đơn hàng"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.5"
+        android:background="#F0A23C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/donHangChiTiet_rscv_showDanhSachDonHang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/donHangChiTiet_floatBtn_moGioHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/lf_orange"
+        android:padding="10dp"
+        android:src="@drawable/ic_cart3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:layout_width="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.4"
+    android:background="@color/lf_orange_3"/>
+        <TextView
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/donHangChiTiet_txt_tinhTrang_itemDangXuLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="Đang xử lý đơn hàng"
+            android:textColor="@color/teal_200"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/donHangChiTiet_txt_tinhTrang_itemChuaXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="Chưa xác nhận"
+            android:textColor="@color/lf_red"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+           />
+        <TextView
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+
+            android:id="@+id/donHangChiTiet_txt_tinhTrang_itemDaXuLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:text="Đã xử lý"
+            android:textColor="@color/lf_green"
+
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+           />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

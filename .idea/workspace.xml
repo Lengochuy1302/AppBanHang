@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:Thaiiiiiii" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3df7f42-435c-48cc-a581-23acce66cef5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Activity/trangChu_SanPham_Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Activity/trangChu_SanPham_Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Adapter/trangChu_showDoc_adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Adapter/trangChu_showDoc_adapter.java" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Adapter/trangChu_showNgang_adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Adapter/trangChu_showNgang_adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_trang_chu_san_pham.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_trang_chu_san_pham.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cuttom_sanpham_trangchu_doc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cuttom_sanpham_trangchu_doc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_cuttom_sanpham_trangchu_ngang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cuttom_sanpham_trangchu_ngang.xml" afterDir="false" />
+>>>>>>> parent of a4d15b4 (sửa layout thông tin tài khoản)
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@C:\Users\ADMIN\.android\avd\Pixel_4_API_28.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LGFood_duan1" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LGFood_duan1" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LGFood_duan1" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LGFood_duan1" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LGFood_duan1" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20cDqGdluo0qizQKbDge9kLC8Rg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.249616794">
+      <recent name="com.example.lgfood_duan1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\drawable" />
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\layout" />
+      <recent name="F:\LGFood_duan1\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.451040553">
+      <recent name="com.example.lgfood_duan1" />
+    </key>
+    <key name="android.template.368583246">
+      <recent name="com.example.lgfood_duan1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\drawable-v24" />
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\color" />
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\ic_them2" />
+      <recent name="F:\Studen_FPT_Poly\AndroiDuAn\LGFood_duan1\app\src\main\res\drawable" />
+      <recent name="F:\LGFood_duan1\app\src\main\res\drawable-v24" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="LGFood_duan1.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3df7f42-435c-48cc-a581-23acce66cef5" name="Default Changelist" comment="" />
+      <created>1636335170924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636335170924</updated>
+    </task>
+    <task id="LOCAL-00001" summary="thêm file border_radius&#10;color">
+      <created>1636364385195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636364385195</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sửa file">
+      <created>1636425649296</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636425649296</updated>
+    </task>
+    <task id="LOCAL-00003" summary="login normal&#10;add item custom&#10;thái">
+      <created>1636966342384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636966342384</updated>
+    </task>
+    <task id="LOCAL-00004" summary="login normal&#10;add item custom&#10;thái">
+      <created>1636966641705</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636966641705</updated>
+    </task>
+    <task id="LOCAL-00005" summary="login normal&#10;add item custom&#10;thái">
+      <created>1636966979485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636966979485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix thành công lỗi&#10;Quá easy&#10;Thais depj dai :*">
+      <created>1637053277953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637053277953</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix thành công lỗi&#10;Quá easy&#10;Thais depj dai :*">
+      <created>1637053773910</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637053773910</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Thaiiiiiii" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="thêm file border_radius&#10;color" />
+    <MESSAGE value="sửa file" />
+    <MESSAGE value="login normal&#10;add item custom&#10;thái" />
+    <MESSAGE value="fix thành công lỗi&#10;Quá easy&#10;Thais depj dai :*" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix thành công lỗi&#10;Quá easy&#10;Thais depj dai :*" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="95" key="#Inspections" timestamp="1636509893833">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="395" y="95" key="#Inspections/0.0.1536.816@0.0.1536.816" timestamp="1636509893833" />
+    <state x="286" y="162" key="#PSD" timestamp="1636509423353">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="286" y="162" key="#PSD/0.0.1536.816@0.0.1536.816" timestamp="1636509423353" />
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636961696862">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1636961696862" />
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1637138393672">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1637138393672" />
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636572104985">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1636572104985" />
+    <state x="112" y="52" width="1336" height="616" key="AVDManager" timestamp="1636509751640">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="112" y="52" width="1336" height="616" key="AVDManager/0.0.1536.816@0.0.1536.816" timestamp="1636509751640" />
+    <state x="349" y="163" key="AndroidCreateResourceFileDialog" timestamp="1637135412491">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="349" y="163" key="AndroidCreateResourceFileDialog/0.0.1536.816@0.0.1536.816" timestamp="1637135412491" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1636966253975" />
+    <state x="614" y="207" key="AndroidCreateXmlResourceDialog" timestamp="1636961595259">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="614" y="207" key="AndroidCreateXmlResourceDialog/0.0.1536.834@0.0.1536.834" timestamp="1636961595259" />
+    <state x="425" y="158" key="AndroidProcessChooserDialog" timestamp="1637198972236">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="158" key="AndroidProcessChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1637198972236" />
+    <state x="93" y="93" width="1350" height="630" key="DiffContextDialog" timestamp="1636957915725">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="93" y="93" width="1350" height="630" key="DiffContextDialog/0.0.1536.816@0.0.1536.816" timestamp="1636957915725" />
+<<<<<<< HEAD
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1637160601247">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1637160601247" />
+=======
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1637127369836">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1637127369836" />
+>>>>>>> parent of a4d15b4 (sửa layout thông tin tài khoản)
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1636982658675" />
+    <state width="1209" height="204" key="GridCell.Tab.0.bottom" timestamp="1637199262094">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1637199262094" />
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1636964412620" />
+    <state width="1209" height="204" key="GridCell.Tab.0.center" timestamp="1637199262094">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1637199262094" />
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1636964412620" />
+    <state width="1209" height="204" key="GridCell.Tab.0.left" timestamp="1637199262094">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1637199262094" />
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1636964412619" />
+    <state width="1209" height="204" key="GridCell.Tab.0.right" timestamp="1637199262094">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1637199262094" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1636964412620" />
+    <state width="1209" height="204" key="GridCell.Tab.1.bottom" timestamp="1637199263674">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1637199263674" />
+    <state width="1209" height="204" key="GridCell.Tab.1.center" timestamp="1637199263674">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1637199263674" />
+    <state width="1209" height="204" key="GridCell.Tab.1.left" timestamp="1637199263674">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1637199263674" />
+    <state width="1209" height="204" key="GridCell.Tab.1.right" timestamp="1637199263674">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1209" height="204" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1637199263674" />
+    <state x="407" y="179" key="MultipleFileMergeDialog" timestamp="1636966968495">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="407" y="179" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1636966968495" />
+    <state x="374" y="123" key="RollbackChangesDialog" timestamp="1637137038327">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="374" y="123" key="RollbackChangesDialog/0.0.1536.816@0.0.1536.816" timestamp="1637137038327" />
+    <state x="269" y="65" key="SettingsEditor" timestamp="1637116180310">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="269" y="65" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1637116180310" />
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1637053776481">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1636425652463" />
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1637053776481" />
+    <state x="584" y="186" key="chooseDestDirectoryDialog" timestamp="1636957907012">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="584" y="186" key="chooseDestDirectoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1636957907012" />
+    <state x="158" y="54" width="1350" height="575" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1636957915725">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="158" y="54" width="1350" height="575" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1636957915725" />
+    <state x="75" y="30" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1637199359235">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+<<<<<<< HEAD
+    <state x="75" y="30" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1637199359235" />
+    <state x="425" y="185" key="run.anything.popup" timestamp="1637155715675">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="425" y="185" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1637155715675" />
+=======
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1637028341205" />
+>>>>>>> parent of a4d15b4 (sửa layout thông tin tài khoản)
+    <state x="417" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1637036962004">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="417" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1637036962004" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Activity/trangChu_SanPham_Activity.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Activity/trangChu_SanPham_Activity.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lgfood_duan1/Activity/trangChu_SanPham_Activity.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

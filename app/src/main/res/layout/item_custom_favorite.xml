@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/favorite_carview_showChitietSanPham"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="2dp"
+   >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/xuLi_relative_formItem2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/xuLi_img_anhItem1"
+
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/xuLi_img_anhItem2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/xuLi_txt_tenItem2"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+
+            android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+            android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+            android:text="Hồng đào khô"
+
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xuLi_txt_xuatXu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuLi_txt_tenItem2"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+            android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+            android:text="Xuất xứ:"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+            app:layout_constraintTop_toBottomOf="@+id/xuLi_txt_tenItem2" />
+
+        <TextView
+            android:id="@+id/xuLi_txt_xuatXuItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/xuLi_txt_xuatXu2"
+            android:layout_alignBottom="@+id/xuLi_txt_xuatXu2"
+            android:layout_toEndOf="@+id/xuLi_txt_xuatXu2"
+            android:layout_toRightOf="@+id/xuLi_txt_xuatXu2"
+            android:text="Đà lạt"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_xuatXu2"
+            app:layout_constraintStart_toEndOf="@+id/xuLi_txt_xuatXu2"
+            app:layout_constraintTop_toTopOf="@+id/xuLi_txt_xuatXu2" />
+
+        <TextView
+            android:id="@+id/xuLi_txt_giaItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuLi_txt_xuatXu2"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/xuLi_img_anhItem1"
+            android:layout_toRightOf="@+id/xuLi_img_anhItem1"
+            android:text="đ100.000"
+            android:textColor="#F0A23C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/xuLi_img_anhItem1"
+            app:layout_constraintTop_toBottomOf="@+id/xuLi_txt_xuatXu2" />
+
+        <ImageView
+            android:id="@+id/xuLi_img_btn_themSanPhamVaoGioHang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_addtocart"
+            app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_giaItem2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/xuLi_txt_giaItem2" />
+
+        <ImageView
+            android:id="@+id/xuLi_img_Btn_yeuThich"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_btn_love_red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

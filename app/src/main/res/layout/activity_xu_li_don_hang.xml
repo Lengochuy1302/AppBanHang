@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E5E5"
+    tools:context=".Activity.Xu_Li_Don_Hang_Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/xuLi_img_btn_backItem"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/broder_radius_xanhduong_nhe"
+                android:padding="5dp"
+                android:src="@drawable/ic_back_orage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="Xử lý đơn hàng"
+                android:textColor="@color/lf_orange"
+                android:textSize="15sp"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/xacNhan_relative_thongTinKhachHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Viewline">
+
+            <TextView
+                android:id="@+id/xacNhan_txt_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Tên:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_tenKhachHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_ten"
+                android:layout_alignBottom="@+id/xacNhan_txt_ten"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_ten"
+                android:text="Lê Nguyễn Quang Thái"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintTop_toTopOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_gmail">
+
+
+                <TextView
+                    android:id="@+id/xacNhan_txt_diaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Địa chỉ:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/xuLi_txt_diaChiKhachHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="305 Hà Huy Tập, Phường Tân Lợi,TP Ma Thuột"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xacNhan_txt_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Số điện thoại:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_sdtKhachHang_xacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_sdt"
+                android:layout_alignBottom="@+id/xacNhan_txt_sdt"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_sdt"
+                android:text="0989464966"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_sdt"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <TextView
+                android:id="@+id/xacNhan_txt_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xacNhan_txt_sdt"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Gmail:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_ten" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_gmailKhachHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_gmail"
+                android:layout_alignBottom="@+id/xacNhan_txt_gmail"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_gmail"
+                android:text="thailnqpk01787@fpt.edu.vn"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_gmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_gmail"
+                app:layout_constraintTop_toBottomOf="@+id/xuLi_txt_tenKhachHang"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/xuLi_rscv_showDanSach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_relative_thongTinKhachHang" />
+
+        <View
+            android:id="@+id/Viewline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="#F0A23C"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/xuLi_cardView_formXacNhan"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:background="@drawable/broder_radius_topleft_topright_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/xuLi_relative_formXacNhan"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Spinner
+                android:id="@+id/xuLI_spn_xuLiDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/broder_stroke_cam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_tongTienFomXacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xuLi_txt_tongTien"
+                android:layout_alignBottom="@+id/xuLi_txt_tongTien"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/xuLi_txt_tongTien"
+                android:text="đ320.000"
+                android:textColor="#F0A23C"
+                android:textSize="20dp"
+                android:textStyle="bold|normal"
+                app:layout_constraintBottom_toBottomOf="@+id/xuLi_txt_tongTien"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/xuLi_txt_tongTien" />
+
+            <TextView
+                android:id="@+id/xuLi_txt_tongTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xuLI_spn_xuLiDonHang"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginTop="10dp"
+                android:text="Tổng tiền:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toStartOf="@+id/xuLi_txt_tongTienFomXacNhan"
+                app:layout_constraintTop_toBottomOf="@+id/xuLI_spn_xuLiDonHang"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+
+            android:paddingTop="17dp"
+            android:paddingBottom="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/xuLi_llout_btn_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/broder_radius_xanhduong_nhe">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_chat" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/xuLi_btn_btnXacNhan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="7"
+                android:background="@drawable/broder_radius_cam_thuonghieu"
+                android:gravity="center"
+                android:text="XÁC NHẬN"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+
+            </Button>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

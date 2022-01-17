@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".Activity.Nhap_SDT">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/edtSDk"
+            app:ccp_defaultNameCode="VN"
+            android:layout_width="125dp"
+            android:layout_height="43dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/t1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtSDTDK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="@drawable/broder_stroke_cam"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnOTP_DK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OTP"
+        android:backgroundTint="@color/lf_orange"/>
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/login_progress_bar"-->
+<!--        style="?android:attr/progressBarStyle"-->
+<!--        android:layout_width="16dp"-->
+<!--        android:layout_height="16dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/generate_btn"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/generate_btn"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/generate_btn" />-->
+    <TextView
+        android:id="@+id/login_form_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Working . . ."
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_btn" />
+</LinearLayout>

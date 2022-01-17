@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".Activity.thong_Tin_Gio_Hang_Activity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/thongTinGioHang_img_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/broder_radius_xanhduong_nhe"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_back_orage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+
+            android:text="Xác nhận đơn hàng"
+            android:textColor="#F0A23c"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.5"
+        android:background="#F0A23C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#D8D6D6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/xacNhan_relative_thongTinKhachHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/xacNhan_txt_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Tên:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/thongTinGioHang_tenKhachHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_ten"
+                android:layout_alignBottom="@+id/xacNhan_txt_ten"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_ten"
+                android:text="Lê Nguyễn Quang Thái"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintTop_toTopOf="@+id/xacNhan_txt_ten"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_gmail">
+
+
+                <TextView
+                    android:id="@+id/xacNhan_txt_diaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Địa chỉ:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/thongTinGioHang_tv_diaChiKhachHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="305 Hà Huy Tập, Phường Tân Lợi,TP Ma Thuột"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xacNhan_txt_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Số điện thoại:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <TextView
+                android:id="@+id/thongTinGioHang_tv_sdtKhachHang_xacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_sdt"
+                android:layout_alignBottom="@+id/xacNhan_txt_sdt"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_sdt"
+                android:text="0989464966"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_sdt"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout15" />
+
+            <TextView
+                android:id="@+id/xacNhan_txt_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xacNhan_txt_sdt"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:text="Gmail:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_ten" />
+
+            <TextView
+                android:id="@+id/thongTinGioHang_tv_gmailKhachHang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xacNhan_txt_gmail"
+                android:layout_alignBottom="@+id/xacNhan_txt_gmail"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/xacNhan_txt_gmail"
+                android:text="thailnqpk01787@fpt.edu.vn"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_gmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.018"
+                app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_gmail"
+                app:layout_constraintTop_toTopOf="@+id/xacNhan_txt_gmail"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/xacNhan_cardView_btnThayDoiThongTin"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+
+                app:cardCornerRadius="12dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_sdt">
+
+                <Button
+                    android:id="@+id/thongTinGioHang_btn_thayDoiThongTin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/broder_radius_cam_thuonghieu"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="THAY ĐỔI THÔNG TIN"
+                    android:textColor="@color/white"
+
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ListView
+            android:id="@+id/thongTinGioHang_lv_xacNhanDonHang"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="170dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_relative_thongTinKhachHang" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:background="@drawable/broder_radius_topleft_topright_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:weightSum="2"
+            android:paddingTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:text="Đơn hàng:"
+                    android:padding="5dp"
+
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Giảm giá:"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Phí vận chuyển:"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/thongTinGioHang_tv_tienDonHang"
+
+                    android:text="300.000đ"
+                    android:padding="5dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/thongTinGioHang_tv_tienGiamGia"
+
+                    android:text="10.000đ"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:gravity="right"
+                    android:layout_marginRight="15dp"
+
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/thongTinGioHang_tv_tienVanChuyen"
+
+                    android:gravity="right"
+                    android:layout_marginRight="15dp"
+
+                    android:text="30.000đ"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/thongTinGioHang_tv_tongTien"
+
+                    android:gravity="center"
+                    android:text="320.000đ"
+
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    android:textColor="#4E4D4D"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/thongTinGioHang_btn_xacNhan"
+
+                        android:text="Xác nhận"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:textStyle="bold"
+
+                        android:textSize="13sp"
+                        android:background="@drawable/broder_radius_cam_thuonghieu"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

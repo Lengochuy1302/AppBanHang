@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xacNhan_cv_layoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="142dp"
+    android:layout_marginTop="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    android:background="@color/white">
+
+        <View
+            android:id="@+id/xacNhan_view_lineItem"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="#F0A23C" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_below="@+id/xacNhan_view_lineItem"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="11dp">
+
+        <TextView
+            android:id="@+id/xacNhan_txt_ten_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Tên:"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/xacNhan_txt_tenKhachHang_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/xacNhan_txt_ten_item"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/xacNhan_txt_ten_item"
+            android:text="Hiếu Trung"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_ten_item"
+            app:layout_constraintEnd_toStartOf="@+id/txt_date_xacNhan_item"
+            app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_ten_item"
+            app:layout_constraintTop_toTopOf="@+id/xacNhan_txt_ten_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_txt_sdt_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xacNhan_txt_ten_item"
+            android:layout_alignParentStart="true"
+            android:text="SĐT:"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_tenKhachHang_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_txt_sdtKhachHang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/xacNhan_txt_sdt_item"
+            android:layout_alignBottom="@+id/xacNhan_txt_sdt_item"
+            android:layout_toEndOf="@+id/xacNhan_txt_sdt_item"
+            android:text="0989464966"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/xacNhan_txt_sdt_item"
+            app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_sdt_item"
+            app:layout_constraintTop_toTopOf="@+id/xacNhan_txt_sdt_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_txt_diaChi_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xacNhan_txt_sdt_item"
+            android:layout_alignParentStart="true"
+            android:text="Địa chỉ:"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_sdt_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_diaChiKhachHang_item"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/xacNhan_txt_diaChi_item"
+            android:layout_alignBottom="@+id/xacNhan_txt_diaChi_item"
+            android:layout_toEndOf="@+id/xacNhan_txt_diaChi_item"
+            android:text="305 Hà Huy Tập, Phường Tân Lợi,
+                 TP Buôn Ma Thuột"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/xacNhan_txt_diaChi_item"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_sdtKhachHang_item" />
+
+        <TextView
+            android:id="@+id/txt_date_xacNhan_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/xacNhan_txt_tenKhachHang_item"
+            android:text="Date:"
+            android:textColor="@color/lf_gray"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/xacNhan_txt_dateKhachHang_item"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xacNhan_txt_dateKhachHang_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/txt_date_xacNhan_item"
+            android:text="12/12/2021"
+            android:textColor="@color/lf_gray"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/xacNhan_txt_tinhTrang_itemDangXuLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xacNhan_txt_dateKhachHang_item"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/xacNhan_txt_tenKhachHang_item"
+            android:text="Đang xử lý đơn hàng"
+            android:textColor="@color/teal_200"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_dateKhachHang_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_txt_tinhTrang_itemChuaXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xacNhan_txt_dateKhachHang_item"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/xacNhan_txt_tenKhachHang_item"
+            android:text="Chưa xác nhận"
+            android:textColor="@color/lf_red"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_dateKhachHang_item" />
+        <TextView
+            android:visibility="invisible"
+
+            android:id="@+id/xacNhan_txt_tinhTrang_itemDaXuLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xacNhan_txt_dateKhachHang_item"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/xacNhan_txt_tenKhachHang_item"
+            android:text="Đã xử lý"
+            android:textColor="@color/lf_green"
+
+            android:textSize="11sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xacNhan_txt_dateKhachHang_item" />
+
+        <TextView
+            android:id="@+id/xacNhan_gia_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="đ200.000"
+            android:textColor="@color/lf_orange"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
